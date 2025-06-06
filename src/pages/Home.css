@@ -1,0 +1,31 @@
+/* Container que agrupa a seção de busca e a de listagem */
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Seção do topo, com a busca, que ocupa a tela inicial */
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza a barra de busca horizontalmente */
+  justify-content: center; /* Centraliza a barra de busca verticalmente */
+  min-height: 90vh; /* Ocupa 90% da altura da tela */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.navbar-container {
+  position: absolute; /* Deixa a navbar fixa no topo */
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.search-component-wrapper {
+  /* Este wrapper ajuda a controlar a posição do Search se necessário */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
