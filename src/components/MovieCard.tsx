@@ -1,4 +1,3 @@
-import React from 'react';
 import { IoTimeOutline, IoPersonCircleOutline, IoFilmOutline } from 'react-icons/io5';
  // Importando o tipo
 import './MovieCard.css';
