@@ -4,6 +4,7 @@ import Search from "../components/Search";
 import MovieList from "../components/MovieList";
 import "./Home.css";
 import { useQuery } from "@tanstack/react-query";
+import type { Movie } from '../types/movie';
 
 async function fetchMovies(): Promise<Movie[]> {
   const BACKEND_URL =
@@ -17,15 +18,6 @@ async function fetchMovies(): Promise<Movie[]> {
     throw new Error("A requisição para o backend falhou");
   }
   return response.json();
-}
-
-export interface Movie {
-  id: number;
-  title: string;
-  posterUrl: string;
-  duration: number;
-  director: string;
-  genre: string;
 }
 
 export default function Home() {

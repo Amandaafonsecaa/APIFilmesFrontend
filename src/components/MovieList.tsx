@@ -1,14 +1,6 @@
 import MovieCard from './MovieCard';
 import './MovieList.css';
-
-export interface Movie {
-  id: number;
-  title: string;
-  posterUrl: string;
-  duration: number;
-  director: string;
-  genre: string;
-}
+import type { Movie } from '../types/movie';
 
 interface MovieListProps {
   movies: Movie[];

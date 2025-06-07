@@ -5,17 +5,10 @@ import {
 } from "react-icons/io5";
 // Importando o tipo
 import "./MovieCard.css";
+import type { Movie } from '../types/movie';
 
 // Dentro do seu Home.tsx
 
-export interface Movie {
-  id: string; // MUDOU para string
-  titulo: string; // MUDOU para português
-  posterUrl: string;
-  duracao: number; // MUDOU para português
-  diretor: string; // MUDOU para português
-  genero: string; // MUDOU para português
-}
 // Definindo os tipos das props que o componente recebe
 interface MovieCardProps {
   movie: Movie;
