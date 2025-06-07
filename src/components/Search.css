@@ -1,34 +1,33 @@
-/* ... (estilo do .search-container continua o mesmo) ... */
+
 .search-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  width: 40rem;
   padding: 1rem;
+  width: 40rem;
 }
 
 /* ================================================= */
 /* ESTILO COMPARTILHADO PARA DEIXÁ-LOS IGUAIS        */
 /* ================================================= */
 .form-element {
-  width: 100%;
   /* Tamanho e Borda */
+  width: 100%;
   height: 48px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
 
   /* Fundo e Efeito de Vidro */
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
-
+  
   /* Layout Interno */
   display: flex;
   align-items: center;
   padding: 0 1.5rem; /* Padding horizontal igual para ambos */
-
+  
   /* Transições e Fonte */
   transition: all 0.3s ease;
   color: #ffffff;

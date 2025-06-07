@@ -1,6 +1,6 @@
-import React from "react";
-import lupa from "../assets/search.png";
-import "./Search.css";
+import React from 'react';
+import lupa from '../assets/search.png';
+import './Search.css';
 
 interface SearchProps {
   value: string;
@@ -8,11 +8,7 @@ interface SearchProps {
   onButtonClick: () => void;
 }
 
-export default function Search({
-  value,
-  onChange,
-  onButtonClick,
-}: SearchProps) {
+export default function Search({ value, onChange, onButtonClick }: SearchProps) {
   return (
     <div className="search-container">
       {/* Adicionamos a classe 'form-element' aqui */}
